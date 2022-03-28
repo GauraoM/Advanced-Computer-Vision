@@ -24,7 +24,7 @@ class FaceMeshDetector():
             for facelm in self.results.multi_face_landmarks:
                 if draw:
                     # Draw landmarks and connections on the face
-                    self.mpDraw.draw_landmarks(img, facelm, self.mpFaceMesh.FACEMESH_TESSELATION, self.drawSpec, self.drawSpec)
+                    self.mpDraw.draw_landmarks(img, facelm, self.mpFaceMesh.FACE_CONNECTIONS, self.drawSpec, self.drawSpec)
                 
                 face = []
                 # Iterate over the face landmarks
