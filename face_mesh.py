@@ -21,7 +21,7 @@ while True:
     if results.multi_face_landmarks:
         for facelm in results.multi_face_landmarks:
             # Draw landmarks and connections on the face
-            mpDraw.draw_landmarks(img, facelm, mpFaceMesh.FACEMESH_TESSELATION, drawSpec, drawSpec)
+            mpDraw.draw_landmarks(img, facelm, mpFaceMesh.FACE_CONNECTIONS, drawSpec, drawSpec)
             # Iterate over the face landmarks
             for id, lm in enumerate(facelm.landmark):
                 #print(lm)
